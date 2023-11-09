@@ -14,7 +14,7 @@ var climbStairs = function(n) {
 
     let thirdStep = 0;
 
-    for (let i=2; i<=n; i++) {
+    for (let i = 2; i <= n; i++) {
 
         thirdStep = firstStep + secondStep;
 
