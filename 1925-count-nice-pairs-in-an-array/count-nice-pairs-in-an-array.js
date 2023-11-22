@@ -17,7 +17,6 @@ var countNicePairs = function(nums) {
         res += cur;
         obj[n - r] = 1 + cur;
     }
-
     return res % (10**9 + 7); 
 }
 
