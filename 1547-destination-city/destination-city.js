@@ -8,7 +8,6 @@ var destCity = function(paths) {
     for (const path of paths) {
         cities.add(path[0]);
     }
-    console.log(cities)
         
     for (const path of paths) {
         const dest = path[1];
