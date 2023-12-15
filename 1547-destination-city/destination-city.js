@@ -16,5 +16,5 @@ var destCity = function(paths) {
         }
     }
 
-        return "";
+    return "";
 };
