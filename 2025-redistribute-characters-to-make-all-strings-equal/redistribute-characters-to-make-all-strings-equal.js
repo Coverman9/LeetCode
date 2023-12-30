@@ -15,8 +15,8 @@ var makeEqual = function(words) {
             }
         }
     }
-    for( let key of Object.keys(obj)) {
-        if( obj[key] % words.length !=0 ) return false
+    for (let key of Object.keys(obj)) {
+        if (obj[key] % words.length != 0 ) return false
     }
     
     return true
