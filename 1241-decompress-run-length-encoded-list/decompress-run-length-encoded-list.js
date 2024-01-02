@@ -3,11 +3,12 @@
  * @return {number[]}
  */
 var decompressRLElist = function(nums) {
-    const result = [];
-  
-  for (let i = 1; i < nums.length; i += 2) {
-    result.push(...new Array(nums[i - 1]).fill(nums[i]));
-  }
-  
-  return result;
+    let res = []
+    for (let i = 0; i < nums.length; i++) {
+        const [freq, val] = [nums[2*i], nums[2*i+1]]
+        for (let k = 0; k < freq; k++) {
+            res.push(val)
+        }
+    }
+    return res
 };
