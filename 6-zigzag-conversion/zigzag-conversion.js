@@ -28,10 +28,5 @@ var convert = function(s, numRows) {
         row += direction;
     }
 
-    let result = '';
-    for (let i = 0; i < numRows; i++) {
-        result += zigzag[i].join('');
-    }
-
-    return result;
+    return zigzag.flat().join('')
 };
