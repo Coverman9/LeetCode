@@ -5,7 +5,6 @@
  */
 var sequentialDigits = function (low, high) {
     let res = [];
-
     function recur(start, num, prev) {
         if (Number(num) > high) return;
 
