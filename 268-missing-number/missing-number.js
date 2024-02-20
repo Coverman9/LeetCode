@@ -7,5 +7,5 @@ var missingNumber = function(nums) {
     for (let i = 0; i < max; i++) {
         if (!nums.includes(i)) return i
     }
-    return max + 1
+    return nums.length
 };
