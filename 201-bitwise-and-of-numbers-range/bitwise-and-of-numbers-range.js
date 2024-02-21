@@ -37,4 +37,3 @@ var rangeBitwiseAnd = function (x, y) {
 
     return res;
 };
-console.log(rangeBitwiseAnd(5, 7))
