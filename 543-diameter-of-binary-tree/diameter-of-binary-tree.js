@@ -24,7 +24,7 @@ const diameterOfBinaryTree = (root) => {
         // recursively call dfs on left and right
         let left = dfs(node.left)
         let right = dfs(node.right)
-
+        console.log(left, right)
         // Get higher between current max diameter or the heights of the left and right subtrees
         maxDiameter = Math.max(maxDiameter, left + right)
 
@@ -34,7 +34,6 @@ const diameterOfBinaryTree = (root) => {
 
     // call the dfs function
     dfs(root)
-
     
     return maxDiameter
     
