@@ -12,7 +12,7 @@
  */
 var findBottomLeftValue = function(root) {
     const queue = [root];
-    let leftmost = null;
+    let leftmost;
 
     while (queue.length) {
         leftmost = queue.shift();
