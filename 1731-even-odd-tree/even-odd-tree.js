@@ -20,7 +20,7 @@ var isEvenOddTree = function (root) {
 
     while (queue.length > 0) {
         let size = queue.length;
-        let prevVal = (level % 2 === 0) ? Number.MIN_SAFE_INTEGER : Number.MAX_SAFE_INTEGER;
+        let prevVal = (level % 2 === 0) ? -Infinity : Infinity
 
         for (let i = 0; i < size; i++) {
             let node = queue.shift();
