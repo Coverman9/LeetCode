@@ -9,6 +9,5 @@ var largestAltitude = function(gain) {
         res.push(start)
         start+= gain[i]
     }
-    console.log(res)
     return Math.max(...res, start)
 };
