@@ -3,10 +3,10 @@
  * @param {number} n
  * @return {number}
  */
-var leastInterval = function(tasks, n) {
+var leastInterval = function (tasks, n) {
     var count = {}
-    var longest  = 0
-    
+    var longest = 0
+
     // count each task and find longest one
     for (let c of tasks) {
         if (count[c] == null) count[c] = 0
@@ -16,7 +16,7 @@ var leastInterval = function(tasks, n) {
 
     var longestCount = 0
     // count how many tasks which have longest.
-    for (let c in count){
+    for (let c in count) {
         if (count[c] == longest) longestCount++
     }
 
